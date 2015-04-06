@@ -37,7 +37,7 @@ end
 toc
 
 % horner method
-disp('Seocndo polinomio - Metodo di Horner');
+disp('Secondo polinomio - Metodo di Horner');
 tic
 for i = 1:1:length(inter2)
     res_pol2(i) = pol_w_horner(pol2, inter2(i));
