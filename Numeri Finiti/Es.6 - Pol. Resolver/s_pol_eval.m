@@ -1,7 +1,7 @@
 clear;
 clc;
 
-n = 1000000;
+n = 10000;
 
 pol = [ 256 -1024 1792 -1792 1120 -448 112 -16 1 ];
 
@@ -12,13 +12,29 @@ int3 = linspace(1.92, 2.08, n);
 int4 = linspace(1.93, 2.07, n);
 int5 = linspace(1.94, 2.06, n);
 
-for i = 1:1:n
-    res1(i) = pol_w_horner(pol, int1(i));
-    res2(i) = pol_w_horner(pol, int2(i));
-    res3(i) = pol_w_horner(pol, int3(i));
-    res4(i) = pol_w_horner(pol, int4(i));
-    res5(i) = pol_w_horner(pol, int5(i));
-end
+% for i = 1:1:n
+%     res1(i) = pol_w_horner(pol, int1(i));
+%     res2(i) = pol_w_horner(pol, int2(i));
+%     res3(i) = pol_w_horner(pol, int3(i));
+%     res4(i) = pol_w_horner(pol, int4(i));
+%     res5(i) = pol_w_horner(pol, int5(i));
+% end
+
+% for i = 1:1:n
+%     res1(i) = simple_eval(int1(i));
+%     res2(i) = simple_eval(int2(i));
+%     res3(i) = simple_eval(int3(i));
+%     res4(i) = simple_eval(int4(i));
+%     res5(i) = simple_eval(int5(i));
+% end
+
+% for i = 1:1:n
+%     res1(i) = extendend_eval(int1(i));
+%     res2(i) = extendend_eval(int2(i));
+%     res3(i) = extendend_eval(int3(i));
+%     res4(i) = extendend_eval(int4(i));
+%     res5(i) = extendend_eval(int5(i));
+% end
 
 figure
 
