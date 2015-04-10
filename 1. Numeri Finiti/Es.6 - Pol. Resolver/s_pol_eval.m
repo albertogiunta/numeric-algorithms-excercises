@@ -1,5 +1,16 @@
-clear;
+% Realizzare una funzione Matlab che calcola il valore del 
+% polinomio p(x)=(x-2)8 utilizzando le formule
+% 
+% p=x8-16x7+112x6-448x5+1120x4-1792x3+1792x2-1024x+256;
+%       p(x)=(x-2)8
+% e lo schema di Horner
+% e ne realizza il grafico in un vettore di 10000 equidistanti 
+% nell?intervallo [1.8,2.2], [1.9, 2.1],  [1.92,2.08], [1.93,2.07], [1.94,2.06] 
+% Spiegare il comportamento osservato. Cosa succede al restringersi 
+% dell?intervallo intorno al valore 2, punto in cui questo polinomio si annulla?
+
 clc;
+clear;
 
 n = 10000;
 

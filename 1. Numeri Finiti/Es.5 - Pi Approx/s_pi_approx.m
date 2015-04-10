@@ -1,3 +1,12 @@
+% Realizzate 4 m-function che implementino i 4 metodi di approssimazione 
+% del valore di ? visti a lezione: 
+% Metodo di Archimede, 
+% Metodo di Viete,  
+% Metodi di Leibniz, 
+% Metodo dello sviluppo in serie dell?arcoseno.  
+% Confrontate la stabilit? e la velocit? di questi algoritmi, 
+% mediante un grafico che riporti l?errore relativo al variare di n.
+
 clear;
 clc;
 

@@ -1,5 +1,10 @@
+% Realizzare una m-function che approssimi la derivata delle seguenti 
+% funzioni nel punto specificato al diminuire di h:
+% f(x)= log(x+1)+x2+2x+1        	  in x=1
+% f(x)= exp(x2+1)+cos(x)+2x+1       in x=1
+
 clc;
-clear all;
+clear;
 
 x = 1;
 h_vett = [-1:-1:-16];
