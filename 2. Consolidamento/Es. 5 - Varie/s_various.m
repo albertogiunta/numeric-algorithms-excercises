@@ -1,3 +1,10 @@
+% Eseguire le operazioni sulle matrici come da istruzioni
+
+clc;
+clear;
+
+disp('%%%%%%%%%%%%%%%%%%%%%');
+
 v = [3 4 67 3 1 6 4 2 7 9 3 1 4 52 0];
 
 sort(v, 'ascend')

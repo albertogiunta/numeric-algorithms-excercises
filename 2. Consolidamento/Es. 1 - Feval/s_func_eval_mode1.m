@@ -11,6 +11,7 @@ choice = input('1. Funzione 1\n2. Funzione 2\n3. Funzione 3\n');
 
 interval = [-1:0.0001:1];
 
+% FEVAL Metodo 1
 if choice == 1
     f = @(x)sin(x) / (x^3 + 2);
 elseif choice == 2
@@ -19,8 +20,9 @@ elseif choice == 3
     f = @(x)x * (x^2 + 0.001);
 end
 
-val_f = zeros(length(interval), 1);
+val_f = zeros(length(interval), 1); % array che contiene i valori della f nei vari punti
 
+% calcolo la funzione nei vari punti dell'intervallo
 for i = 1: length(interval)
     val_f(i) = feval(f, interval(i));
 end

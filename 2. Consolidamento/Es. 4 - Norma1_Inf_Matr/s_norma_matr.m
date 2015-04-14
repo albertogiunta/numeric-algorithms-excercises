@@ -12,11 +12,14 @@ m = input('Inserire un matrice di tipo [... ; ... ; ...]: ');
 res = norma1_inf_matr(m);
 fprintf('Norma 1 = %d\tNorma Inf = %d\n', res(1), res(2));
 
+false = 0;
+is_correct = false;
 if size(m,1) == size(m,2)
     is_correct = check(res(1), res(2), size(m,1));
 end
 
-if is_correct == 1
+true = 1;
+if is_correct == true
     disp('I risultati ottenuti sono corretti!');
 else
     disp('I risultati ottenuti NON sono corretti!');

@@ -17,12 +17,15 @@
 clc;
 clear;
 
+% polinomi da testare
 pol1 = [ 256 -1024 1792 -1792 1120 -448 112 -16 1 ];
 pol2 = [ 1 -4 0 12 -7 0 28 0 0 -8 0 1 ];
 
+% intervalli su cui calcolare il valore dei polinomi
 inter1 = linspace(1.8, 2.2, 10000);
 inter2 = linspace(-5, 5, 10000);
 
+% contenitori per i risultati
 res_pol1 = inter1;
 res_pol2 = inter2;
 
@@ -60,6 +63,7 @@ for i = 1:1:length(inter2)
 end
 toc
 
+% creo il grafico
 figure
 
 subplot(1, 2, 1);
