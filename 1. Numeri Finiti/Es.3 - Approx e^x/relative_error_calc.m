@@ -7,6 +7,6 @@ function [ err ] = relative_error_calc( human, calculator )
     
     % calculator : ? il valore di default calcolato dal calcolatore
     
-    err = abs((human - calculator) / human);
+    err = abs((human - calculator) / calculator);
 
 end

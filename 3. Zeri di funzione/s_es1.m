@@ -1,4 +1,12 @@
-% esercizio 1
+% Per saldare il valore di un acquisto di 40000 euro sono necessarie
+% 8 rate annuali di 7000 euro.
+% Qual ? l?interesse applicato?
+% Ricordando la relazione matematica che lega il valore attuale p, il
+% pagamento annuale A, il numero di anni n, l?interesse i,
+% A = p * ...
+% ricavare l?interesse che soddisfa questa relazione, con i metodi
+% visti a lezione.
+% Confrontare, analizzare e commentare i risultati alla luce della teoria.
 
 clc;
 clear;

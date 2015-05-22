@@ -14,5 +14,4 @@ function [ res ] = archimede( n )
     end
     
     res = p(n);
-
 end

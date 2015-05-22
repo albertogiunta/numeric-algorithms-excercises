@@ -1,4 +1,6 @@
-% esercizio 4
+% esercizio 5
+% Dato il valore y0=1, trovare, facendo uso del metodo di bisezione
+% e del metodo di Newton, l?unico valore [ -?/ 2, ?/2] tale che sin(x0)=y0.
 
 clc;
 clear;
@@ -22,7 +24,7 @@ if (feval(f, interval(1)) * feval(f, interval(2))) > 0
         return
 end
 
-[c, i] = bisezione(f, interval(), prec, 3);
+[c, i] = bisezione(f, interval(), prec, 1);
 disp('BISEZIONE');
 fprintf('Zero di f\t\tN Iter\n');
 fprintf('%f\t\t\t%d\n\n', c, i);
@@ -30,4 +32,4 @@ fprintf('%f\t\t\t%d\n\n', c, i);
 [c, i] = newton(f, f_der, c, prec, max_it);
 disp('NEWTON');
 fprintf('Zero di f\t\tN Iter\n');
-fprintf('%f\t\t\t%d\n\n', c, i);    
+fprintf('%f\t\t\t%d\n\n', c, i);
