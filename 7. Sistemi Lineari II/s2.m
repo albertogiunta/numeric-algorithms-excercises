@@ -7,7 +7,7 @@ A = rand(n);
 B = A' * A;
 
 tic
-[ l ] = cholesky2(B);
+[ l ] = cholesky(B);
 
 b = sum(B, 2);
 

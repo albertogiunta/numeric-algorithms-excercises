@@ -5,7 +5,7 @@ axis([0 1 0 1]);
 hold on
 n = 0;
 button = 1;
-stop = 5;
+stop = 10;
 x = zeros(stop, 1);
 y = zeros(stop, 1);
 
@@ -35,9 +35,9 @@ if scelta == 1
     spl = spline(x, y, interval);
     
     figure
-    plot(new, interval, 'b');
+    plot(interval, new, 'b');
     hold on
-    plot(spl, interval, 'g');
+    plot(interval, spl, 'g');
     hold on
     plot(x, y, 'ro');
     legend('Newton', 'Spline');
