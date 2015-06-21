@@ -12,5 +12,5 @@ function [ I ] = simpson_c( a, b, f, n_intervals )
         I = I + (feval(f, x(i)) * 2);
     end
     
-    I = (I + feval(f, x(n_intervals + 1)));
+    I = (I + feval(f, x(n_intervals + 1))) * h/3;
 end

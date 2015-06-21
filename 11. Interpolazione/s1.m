@@ -3,7 +3,7 @@ clc;
 
 m = 1000;
 % n = [3 5 10 15];
-n = 5;
+n = 15;
 
 x_scelta = input('Usare x equidistanti (1) o chebishev (2)? ');
 if x_scelta == 1

@@ -13,7 +13,6 @@ function [ c, i ] = bisezione( f, interval, prec, max_it )
     
     for i=1:max_it
         c = a + ((b - a) / 2);
-        
         if abs(b - a) <= prec
             break;
         elseif (feval(f, a) * feval(f, c)) < 0

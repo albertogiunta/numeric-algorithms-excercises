@@ -30,19 +30,19 @@ hold off
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-for i = 1: n
-    x(i) = trapezi(0, t(i), fx);
-    y(i) = trapezi(0, t(i), fy);
-end
-subplot(1,2,1);
-plot(x, y, 'r');
-title('Trapezi');
-hold on
-for i = 1: n
-    x(i) = simpson(0, t(i), fx);
-    y(i) = simpson(0, t(i), fy);
-end
-subplot(1,2,2);
-plot(x, y, 'b');
-title('Simpson');
-hold off
+% for i = 1: n
+%     x(i) = trapezi(0, t(i), fx);
+%     y(i) = trapezi(0, t(i), fy);
+% end
+% subplot(1,2,1);
+% plot(x, y, 'r');
+% title('Trapezi');
+% hold on
+% for i = 1: n
+%     x(i) = simpson(0, t(i), fx);
+%     y(i) = simpson(0, t(i), fy);
+% end
+% subplot(1,2,2);
+% plot(x, y, 'b');
+% title('Simpson');
+% hold off
